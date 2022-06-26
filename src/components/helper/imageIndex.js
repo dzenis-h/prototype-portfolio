@@ -23,6 +23,8 @@ export const p22 = require('../../assets/img/projects/p22.webp');
 export const p23 = require('../../assets/img/projects/p23.webp');
 export const p24 = require('../../assets/img/projects/p24.webp');
 
+export const p28 = require('../../assets/img/projects/p24.webp');
+
 // // BACKUP IMAGES FOR OLDER BROWSER
 export const j1 = require('../../assets/backup/p1.jpg');
 export const j2 = require('../../assets/backup/p2.jpg');

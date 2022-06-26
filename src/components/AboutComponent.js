@@ -30,7 +30,7 @@ import python from "../assets/icons/python.png";
 import java3 from "../assets/icons/java3.png";
 import firebase from "../assets/icons/firebase.png";
 import socket from "../assets/icons/socket.jpg";
-import node2 from "../assets/icons/node.png";
+import node from "../assets/icons/node.png";
 
 const About = () => {
   const themeState = useTheme();
@@ -218,7 +218,7 @@ const About = () => {
                 </li>
 
                 <li className={darkMode === "true" ? "black" : "white"}>
-                  <Icon name={node2} />{" "}
+                  <Icon name={node} />{" "}
                   <b className="text-secondary">NodeJS </b>
                   <br />
                   <i>
@@ -409,7 +409,7 @@ const About = () => {
                       <span className="mr ml">ReactJS</span>
                       <Icon name={_react} height="20" width="20" />
                       <span className="mr ml">NodeJS</span>
-                      <Icon name={node2} height="20" width="20" />
+                      <Icon name={node} height="20" width="20" />
                     </p>
                   </b>
                 </li>

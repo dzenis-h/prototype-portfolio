@@ -102,7 +102,7 @@ const Work = () => {
 
             <HighlightedApp
               mainLink="https://hr-ems.herokuapp.com/index.html"
-              github="https://github.com/dzenis-h/Mars-EMS"
+              github="https://github.com/BiggaHD/Mars-EMS"
             />
           </div>
           <HighlightedDescription />
@@ -120,7 +120,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://dev--spot.herokuapp.com/"
-                github="https://github.com/dzenis-h/devSpot"
+                github="https://github.com/BiggaHD/devSpot"
                 name="Dev_Spot"
                 description="It's a social network for developers 💻"
               />
@@ -133,7 +133,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://hr-ems.herokuapp.com/index.html"
-                github="https://github.com/dzenis-h/Mars-EMS"
+                github="https://github.com/BiggaHD/Mars-EMS"
                 name="Mars EMS"
                 description="Employee management system for Accounting and HR 📊📉📆"
               />
@@ -146,7 +146,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://reactive-feeds.web.app/"
-                github="https://github.com/dzenis-h/Reactive-RSS"
+                github="https://github.com/BiggaHD/Reactive-RSS"
                 name="Reactive RSS"
                 description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
               />
@@ -159,7 +159,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://mini--stories.herokuapp.com/"
-                github="https://github.com/dzenis-h/miniStories"
+                github="https://github.com/BiggaHD/miniStories"
                 name="miniStories"
                 description="A mini social network site with many extras 📗"
               />
@@ -176,7 +176,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://balkan-recipes.firebaseapp.com/"
-                github="https://github.com/dzenis-h/Balkan_Recipe_Book"
+                github="https://github.com/BiggaHD/Balkan_Recipe_Book"
                 name="Balkan Recipes"
                 description="Collect recipes and organize your shopping list 🥗"
               />
@@ -189,7 +189,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://client-panel-2019.firebaseapp.com/"
-                github="https://github.com/dzenis-h/client-panel"
+                github="https://github.com/BiggaHD/client-panel"
                 name="Client Panel"
                 description=" Add clients, check/ change their balances, etc. 💶"
               />
@@ -202,7 +202,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://the-mern-shop.herokuapp.com/"
-                github="https://github.com/dzenis-h/MERN_Shop"
+                github="https://github.com/BiggaHD/MERN_Shop"
                 name="The MERN Shop"
                 description="eCommerce project built using the MERN stack 💲🖥"
               />
@@ -219,7 +219,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://spacex-2020.herokuapp.com"
-                github="https://github.com/dzenis-h/spaceX-launches"
+                github="https://github.com/BiggaHD/spaceX-launches"
                 name="SpaceX Launcher"
                 description="An app that interacts with the official SpaceX API 🚀"
               />
@@ -236,7 +236,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://web-calorie-tracker.firebaseapp.com/"
-                github="https://github.com/dzenis-h/Calorie_Tracker"
+                github="https://github.com/BiggaHD/Calorie_Tracker"
                 name="Calorie Tracker"
                 description="Track your calories and save data into LS 🍏"
               />
@@ -253,7 +253,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://reactive-hamburger.web.app/"
-                github="https://github.com/dzenis-h/Reactive-Burger"
+                github="https://github.com/BiggaHD/Reactive-Burger"
                 name="Reactive Burger"
                 description="Create a profile, build the burger you like, order it, enjoy 🍔"
               />
@@ -270,7 +270,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://balkan-sport.web.app"
-                github="https://github.com/dzenis-h/Balkan-Sports-Store"
+                github="https://github.com/BiggaHD/Balkan-Sports-Store"
                 name="Balkan Sports Store"
                 description="eCommerce prototype app made with Angular 🏀"
               />
@@ -287,7 +287,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://reactive-tube-2.web.app/"
-                github="https://github.com/dzenis-h/Reactive-tube"
+                github="https://github.com/BiggaHD/Reactive-tube"
                 name="Reactive Tube"
                 description="React-Redux app that uses YouTube API 🎦"
               />
@@ -300,7 +300,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://mongo-share.herokuapp.com/"
-                github="https://github.com/dzenis-h/bigga_file_uploads"
+                github="https://github.com/BiggaHD/bigga_file_uploads"
                 name="Bigga File Uploads"
                 description="2 way data transfer of various file types w/ preview 🌀"
               />
@@ -313,7 +313,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://nexter-homes.web.app"
-                github="https://github.com/dzenis-h/nexter"
+                github="https://github.com/BiggaHD/nexter"
                 name="Nexter website"
                 description="A prototype for a real estate agency 🏡"
               />
@@ -330,7 +330,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://web-loan-calculator.firebaseapp.com/"
-                github="https://github.com/dzenis-h/Loan-Calculator-2.0"
+                github="https://github.com/BiggaHD/Loan-Calculator-2.0"
                 name="Loan Calculator 2.0"
                 description="Estimated payments for loan amounts, interest rates and terms 📊"
               />
@@ -343,7 +343,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://evolwe-example-site.firebaseapp.com/"
-                github="https://github.com/dzenis-h/evolWE"
+                github="https://github.com/BiggaHD/evolWE"
                 name="evolWe 2.0"
                 description="A prototype of a landing page made for a client ☮"
               />
@@ -356,7 +356,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://hotel-xo.web.app"
-                github="https://github.com/dzenis-h/hotel-xo"
+                github="https://github.com/BiggaHD/hotel-xo"
                 name="Hotel XO"
                 description="A prototype website made for a Hotel 🏨"
               />
@@ -373,7 +373,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://reactive--contacts.herokuapp.com/"
-                github="https://github.com/dzenis-h/Reactive-Contacts"
+                github="https://github.com/BiggaHD/Reactive-Contacts"
                 name="Reactive Contacts"
                 description="App that lets you add and manipulate contacts 📞"
               />
@@ -386,7 +386,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://idea--x.herokuapp.com"
-                github="https://github.com/dzenis-h/IDEA_x"
+                github="https://github.com/BiggaHD/IDEA_x"
                 name="idea_X"
                 description="Save ideas for your next coding project 💡"
               />
@@ -399,7 +399,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://hub-finder.web.app/"
-                github="https://github.com/dzenis-h/Hub_Finder"
+                github="https://github.com/BiggaHD/Hub_Finder"
                 name="Hub_Finder"
                 description="App that uses the GitHub API to find details about its users 🔎"
               />
@@ -411,8 +411,8 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://dzenis-h.github.io/iZEN"
-                github="https://github.com/dzenis-h/iZEN"
+                mainLink="https://biggahd.github.io/iZEN"
+                github="https://github.com/BiggaHD/iZEN"
                 name="iZEN"
                 description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
               />
@@ -425,7 +425,20 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://node-book-shop.herokuapp.com"
-                github="https://github.com/dzenis-h/node-book-shop-2.0"
+                github="https://github.com/BiggaHD/node-book-shop-2.0"
+                name="Node Book Shop"
+                description="A prototype of an online store for selling and buying books 📚🛒"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p21} jpg={j21} title="Image Search" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://node-book-shop.herokuapp.com"
+                github="https://github.com/BiggaHD/node-book-shop-2.0"
                 name="Node Book Shop"
                 description="A prototype of an online store for selling and buying books 📚🛒"
               />
@@ -438,7 +451,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://reactive-movies.firebaseapp.com/"
-                github="https://github.com/dzenis-h/rubicon-movies"
+                github="https://github.com/BiggaHD/rubicon-movies"
                 name="Reactive Movie DB"
                 description="A fast and beautiful web app that uses the TMDb API 🎬"
               />
