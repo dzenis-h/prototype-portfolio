@@ -40,6 +40,7 @@ import {
  BalkanSportsStore_20,
  TheMERNShop_21,
  ImageSearch_26,
+ ReactiveOrders,
 //  =====================
 BalkanRecipes,
 BiggaFileUploads,
@@ -69,7 +70,8 @@ iZEN_10,
 iZen,
 ImageSearch,
 PrototypePortfolio_28,
-prototypePortfolio
+prototypePortfolio,
+ReactiveOrders_29
 
 
 
@@ -485,6 +487,32 @@ const Work = () => {
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={PrototypePortfolio_28} jpg={prototypePortfolio} title="Prototype Portfolio" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://prototype-portfolio-1.web.app/"
+                github="https://github.com/dzenis-h/prototype-portfolio"
+                name="Portfolio prototype"
+                description="A prototype of a portfolio website. 🖥💻"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={ReactiveOrders_29} jpg={ReactiveOrders} title="Reactive Orders" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://reactive-order.vercel.app/"
+                github="https://github.com/dzenis-h/reactive-order"
+                name="Reactive Orders"
+                description="A prototype meals ordering app made with React. 🥗"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent webp={Espro_27} jpg={Espro} title="Espro Coffee Shop" />
               </Suspense>
 
@@ -493,19 +521,6 @@ const Work = () => {
                 github="https://github.com/dzenis-h/espro"
                 name="Espro"
                 description="A web app made for a local coffee shop. ☕"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={PrototypePortfolio_28} jpg={prototypePortfolio} title="Prototype Portfolio" />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://prototype-portfolio-1.web.app/"
-                github="https://github.com/dzenis-h/HTML-CSS/tree/master/portofolio_2"
-                name="Portfolio prototype"
-                description="A prototype of a portfolio website. 🖥💻"
               />
             </div>
 
