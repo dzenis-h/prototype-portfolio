@@ -25,6 +25,7 @@ export const ReactiveContacts_24 = require('../../assets/img/projects/ReactiveCo
 export const ReactiveBurger_25 = require('../../assets/img/projects/ReactiveBurger_19.webp');
 export const ImageSearch_26 = require('../../assets/img/projects/ImageSearch_12.webp');
 export const Espro_27 = require('../../assets/img/projects/Espro_6.webp');
+export const PrototypePortfolio_28 = require('../../assets/img/projects/PrototypePortfolio_28.webp');
 
 // // BACKUP IMAGES FOR OLDER BROWSER
 export const BalkanRecipes = require('../../assets/backup/BalkanRecipes.jpg');
@@ -53,3 +54,4 @@ export const ReactiveRSS = require('../../assets/backup/ReactiveRSS.jpg');
 export const ReactiveTube = require('../../assets/backup/ReactiveTube.jpg');
 export const SpaceXLauncher = require('../../assets/backup/SpaceXLauncher.jpg');
 export const TheMERNShop = require('../../assets/backup/TheMERNShop.jpg');
+export const prototypePortfolio = require('../../assets/backup/PrototypePortfolio.jpg');

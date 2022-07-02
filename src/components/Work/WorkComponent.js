@@ -39,6 +39,7 @@ import {
  SpaceXLauncher_19,
  BalkanSportsStore_20,
  TheMERNShop_21,
+ ImageSearch_26,
 //  =====================
 BalkanRecipes,
 BiggaFileUploads,
@@ -51,7 +52,6 @@ evolWe2,
 HotelXO,
 HubFinder,
 idea_X,
-// ImageSearch,
 LoanCalculator2,
 MarsEMS,
 miniStories,
@@ -66,7 +66,10 @@ SpaceXLauncher,
 BalkanSportsStore,
 TheMERNShop,
 iZEN_10,
-iZen
+iZen,
+ImageSearch,
+PrototypePortfolio_28,
+prototypePortfolio
 
 
 
@@ -348,6 +351,19 @@ const Work = () => {
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={ImageSearch_26} jpg={ImageSearch} title="Image Search App" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://coding-challenge-2022.web.app"
+                github="https://github.com/dzenis-h/coding-challenge"
+                name="Image Search App"
+                description="A prototype for search images by using unsplah API. 📷"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={LoanCalculator2_11}
                   jpg={LoanCalculator2}
@@ -477,6 +493,19 @@ const Work = () => {
                 github="https://github.com/dzenis-h/espro"
                 name="Espro"
                 description="A web app made for a local coffee shop. ☕"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={PrototypePortfolio_28} jpg={prototypePortfolio} title="Prototype Portfolio" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://prototype-portfolio-1.web.app/"
+                github="https://github.com/dzenis-h/HTML-CSS/tree/master/portofolio_2"
+                name="Portfolio prototype"
+                description="A prototype of a portfolio website. 🖥💻"
               />
             </div>
 
