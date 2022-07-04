@@ -73,7 +73,11 @@ PrototypePortfolio_28,
 prototypePortfolio,
 ReactiveOrders_29,
 iBookMark_30,
-iBookMark
+iBookMark,
+BiggaPublishing,
+BiggaPublishing_29,
+DataSearch,
+DataSearch_31
 
 
 
@@ -484,6 +488,32 @@ const Work = () => {
                 github="https://github.com/BiggaHD/rubicon-movies"
                 name="Reactive Movie DB"
                 description="A fast and beautiful web app that uses the TMDb API 🎬"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={DataSearch} jpg={DataSearch_31} title="Data Search Prototype" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://data-search.vercel.app/"
+                github="https://github.com/dzenis-h/dataSearch"
+                name="Data Search"
+                description="Search users info by first name, surname or company 👀"
+              />
+            </div>
+            
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={BiggaPublishing_29} jpg={BiggaPublishing} title="reactive_movies" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://bigga-publishing-2.web.app"
+                github="https://github.com/dzenis-h/bigga-publishing"
+                name="Bigga Publishing"
+                description="Prototype of a Landing Page"
               />
             </div>
             
