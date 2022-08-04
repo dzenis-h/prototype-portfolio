@@ -11,6 +11,8 @@ import Work from "./components/Work/WorkComponent";
 import Contact from "./components/contactForm/ContactComponent";
 import Footer from "./components/layout/FooterComponent";
 import Menu from "./components/layout/MenuComponent";
+import Blog from "./Blog"
+import SinglePost from './SinglePost'
 
 import "./style/darkMode.css";
 import "./style/App.css";

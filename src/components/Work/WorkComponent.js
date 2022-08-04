@@ -460,7 +460,7 @@ const Work = () => {
               <WrokTemplate
                 mainLink="https://ibookmark-app.web.app"
                 github="https://github.com/dzenis-h/iBookmark"
-                name="iZEN"
+                name="iBookmark 2.0"
                 description="Simple app for bookmarking your favourite websites. ✔"
               />
             </div>
