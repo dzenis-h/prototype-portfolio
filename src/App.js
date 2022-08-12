@@ -11,25 +11,21 @@ import Work from "./components/Work/WorkComponent";
 import Contact from "./components/contactForm/ContactComponent";
 import Footer from "./components/layout/FooterComponent";
 import Menu from "./components/layout/MenuComponent";
-import Blog from "./Blog"
-import SinglePost from './SinglePost'
 
 import "./style/darkMode.css";
 import "./style/App.css";
 import "react-toastify/dist/ReactToastify.css";
 
-import * as firebase from "firebase/app";
-import "firebase/analytics";
-import { firebaseConfig } from "./config/config";
-
 import { ThemeProvider } from "./components/darkMode/useTheme";
+
+import { initializeApp } from 'firebase/app';
+import {firebaseConfig} from './config/config'
+
 
 const App = () => {
   // Initialize Firebase
-  if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-  }
-  firebase.analytics();
+  initializeApp(firebaseConfig);
+
   return (
     <Fragment>
       <ThemeProvider>
