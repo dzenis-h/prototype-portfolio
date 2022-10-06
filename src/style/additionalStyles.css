@@ -464,6 +464,7 @@ canvas {
 
 .count-particles {
   -webkit-user-select: none;
+  user-select: none;
   margin-top: 5px;
   margin-left: 5px;
   border-radius: 0 0 3px 3px;
@@ -561,3 +562,6 @@ canvas {
     height: 5em;
   }
 }
+
+
+

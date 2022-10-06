@@ -10,9 +10,10 @@ const HighlightedHeader = () => {
         <h3
           className={
             darkMode === "true"
-              ? "white specialFont bold textShadow"
-              : "black specialFont bold textShadow"
+              ? "work-subtitle white specialFont bold textShadow"
+              : "work-subtitle black specialFont bold textShadow"
           }
+          style={{fontSize: "1.1rem"}}
         >
           I develop software every day. Below is a shortened and adapted list of
           my projects/prototypes:{" "}
@@ -21,7 +22,7 @@ const HighlightedHeader = () => {
       </div>
 
       <p className="header-note">
-        <span className="text-secondary" aria-label="dash">
+        <span className="custom-text" aria-label="dash">
           <b className={darkMode === "true" ? "note__reverse" : "note"}>
             <i>Note</i>➖{" "}
           </b>

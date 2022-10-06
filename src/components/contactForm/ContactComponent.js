@@ -83,13 +83,25 @@ const Contact = () => {
 
   return (
     <Wrapper>
-      <main id="contact">
+      <main
+        id="contact"
+        className={darkMode === "true" ? "dark-theme" : "white-theme"}
+      >
         <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
         <h1 className="lg-heading textShadow">
           <span className={darkMode === "true" ? "white" : "heading-about"}>
             Contact
           </span>
-          <i className="text-secondary textShadow"> Me</i>
+          <i
+            className={
+              darkMode === "true"
+                ? "specialColor custom-text"
+                : "dark-heading gold-headings"
+            }
+          >
+            {" "}
+            Me
+          </i>{" "}
         </h1>
 
         <div className="contact-container">
@@ -99,12 +111,12 @@ const Contact = () => {
                 className={
                   darkMode === "true"
                     ? "company-info-reverse lead"
-                    : "lead textShadow"
+                    : "lead"
                 }
               >
                 Additional info:
               </h2>
-              <small className="text-secondary lead">
+              <small className="post-title" style={{ color: "firebrick" }}>
                 For convenience, the contact info is clickable.
               </small>
               <ul className="contact-list">
@@ -136,7 +148,7 @@ const Contact = () => {
             </div>
 
             {/* CONTACT FORM */}
-            <div className="contact">
+            <div className="contact" style={{backgroundColor: "#252525"}}>
               <h1 className="contact-heading">Contact Form</h1>
               <p className="contact-plus">
                 For any queries please contact me using this form or by other

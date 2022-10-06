@@ -1,44 +1,47 @@
-import React, { Fragment } from "react";
-import Local_Setup from "../../../documents/Local_Setup.pdf";
+import React from "react";
+import Local_Setup from "../../../assets/documents/Local_Setup.pdf";
+
+import { Wrapper } from "../../darkMode/Wrapper";
 
 const HighlightedList = ({ openVideo }) => {
+  const darkMode = localStorage.getItem("dark");
+
   return (
-    <Fragment>
+    <Wrapper>
       <ul className="highlightedList">
         <li>
-          <b className="text-secondary textShadow">
+          <b className="custom-text">
             Some of the technologies used in this app include:
           </b>
         </li>
         <hr />
         <li>
-          <b>HTML5</b> & <b>CSS3</b> <i>(on a more advance level)</i>
+          <b>HTML5</b> & <b>CSS3</b> <i>[advance level]</i>
         </li>
         <li>
-          <b>ReactJS</b> <i>(with many related NPM packages)</i>
+          <b>ReactJS</b> <i>[plus entire ecosystem]</i>
         </li>
         <li>
-          <b>Redux</b> (<i>for 90% of the state management)</i>
+          <b>Redux</b> <i>[for state management]</i>
         </li>
         <li>
           <b>NodeJS</b>
           <i>
-            (with <b>SailsJS</b> in this particular project)
+            [w/ <b>SailsJS</b> in this app]
           </i>
         </li>
         <li>
-          <b>MongoDB</b> <i>(for monthly local storage)</i>
+          <b>MongoDB</b> <i>[for local storage]</i>
         </li>
         <li>
-          <b>Bootstrap</b> <i>(but mostly pure CSS3)</i>
+          <b>Bootstrap</b> <i>[plus pure CSS3]</i>
         </li>
         <li>
-          Google OAuth2, Drive & Spreadsheets APIs <br />
-          <i>(for OAuth, sync, and remote storage)</i>
+          <b>Google APIs</b> <i>[OAuth2, Drive & Spreadsheets]</i>
         </li>
-        <li>
+        {/* <li>
           jQuery & Lodash <i>(as helper libraries)</i>
-        </li>
+        </li> */}
         <li>... and so much more</li>
         <hr />
         <div className="highlightedList__icons">
@@ -46,7 +49,11 @@ const HighlightedList = ({ openVideo }) => {
             <a
               href="#!"
               id="video"
-              className="icons textShadow"
+              className={
+                darkMode === "true"
+                  ? "about-parts icons textShadow"
+                  : "black-list icons textShadow"
+              }
               onClick={openVideo}
               aria-label="Open the video demonstration"
             >
@@ -58,16 +65,29 @@ const HighlightedList = ({ openVideo }) => {
           <li style={{ listStyleType: "none" }}>
             <a
               href={Local_Setup}
-              className="icons textShadow"
+              className={
+                darkMode === "true"
+                  ? "about-parts icons textShadow"
+                  : "black-list icons textShadow"
+              }
               download="Local_Setup"
               aria-label="Download the instructions"
             >
-              <i className="fas fa-download fa-2x" /> Download Instructions
+              <i
+                className={
+                  darkMode
+                    ? "links-black fas fa-download fa-2x"
+                    : "links-white fas fa-download fa-2x"
+                }
+              />
+              <span className={darkMode ? "links-black" : " links-white"}>
+                Download Instructions
+              </span>
             </a>
           </li>
         </div>
       </ul>
-    </Fragment>
+    </Wrapper>
   );
 };
 

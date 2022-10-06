@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 
-// import CV from "../documents/Dzenis H..pdf";
+import CV from "../assets/documents/_Dzenis-H..pdf";
+import CL from "../assets/documents/_Cover-Letter.pdf";
 
 const Home = () => {
   setTimeout(() => {
@@ -14,7 +15,7 @@ const Home = () => {
   }, 200);
 
   useEffect(() => {
-    document.title = "Dzenis H."; // making the document title dynamic
+    document.title = "Home"; // making the document title dynamic
   }, []);
 
   return (
@@ -25,13 +26,18 @@ const Home = () => {
         </div>
         <div className="wrapper animate__animated bounceInLeft">
           <h1 className="dzenis specialFont text textShadow">
-            <span className="specialFont"></span> Dzenis
-            <i className="text-secondary"> H.</i>
+            <span className="specialFont" style={{ color: "whitesmoke" }}>
+              Dzenis
+            </span>
+            <i className="text-secondary">
+              {" "}
+              <b>H.</b>
+            </i>
           </h1>
         </div>
         <h2 className="text textShadow">
-          <i>
-            Competent <span className="text-secondary">Full Stack</span> Web
+          <i style={{ color: "white" }}>
+            Competent <span className="white-heading">Full Stack</span> Web
             Developer
           </i>
         </h2>
@@ -60,15 +66,14 @@ const Home = () => {
           >
             <i className="fab fa-linkedin-in fa-2x" />
           </a>
-          {/* <a href={CV} download="Dzenis-H" className="cv">
+          <a href={CV} download="Dzenis-H" className="cv">
             <i className="fas fa-cloud-download-alt fa-2x" />
-            <span className="dox">Download Resume</span>
-          </a> */}
-          {/*
+            <span className="dox">Resume</span>
+          </a>
           <a href={CL} download="Cover-Letter" style={{ marginLeft: "1rem" }}>
             <i className="fas fa-file-signature fa-2x" />
-            <span className="dox">Cover Letter</span>
-          </a> */}
+            <span className="dox">Letter</span>
+          </a>
         </div>
       </main>
     </Fragment>

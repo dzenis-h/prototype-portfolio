@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import webp_Portrait from "../assets/img/portrait.webp";
 import jpg_Portrait from "../assets/backup/portrait.jpg";
@@ -37,15 +37,31 @@ const About = () => {
   const darkMode = localStorage.getItem("dark");
 
   return (
-    <Fragment>
+    <>
       <Wrapper>
-        <main id="about">
+        <main
+          id="about"
+          className={darkMode === "true" ? "dark-theme" : "white-theme"}
+        >
           <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
           <h1 className="lg-heading textShadow">
-            <span className={darkMode === "true" ? "white" : "heading-about"}>
+            <span
+              className={
+                darkMode === "true" ? "white specialColor" : " heading-about"
+              }
+            >
               About
             </span>
-            <i className="text-secondary textShadow"> Me</i>
+            <i
+              className={
+                darkMode === "true"
+                  ? "specialColor custom-text"
+                  : "dark-heading gold-headings"
+              }
+            >              Me
+            </i>
+
+              {" "}
           </h1>
           <h2 className="sm-heading">
             A snapshot of what you can expect from me:
@@ -61,8 +77,16 @@ const About = () => {
             </picture>
 
             <div className="bio">
-              <h3 className="text-secondary textShadow">Intro:</h3>
-              <small className="about-parts">
+              <h3
+                className={
+                  darkMode === "true"
+                    ? "text-secondary textShadow"
+                    : "about-headline custom-text"
+                }
+              >
+                Intro:
+              </h3>
+              <small className={darkMode === "true" ? "about-parts" : "black"}>
                 I’m a go-getter, always up-to-date with the latest tech, web
                 protocols, tools, and software development standards.
                 Programming is my passion. My ultimate goal is to become a
@@ -71,15 +95,31 @@ const About = () => {
                 driven individual.
               </small>
               <hr />
-              <p className="text-secondary textShadow">
+              <p
+                className={
+                  darkMode === "true"
+                    ? "text-secondary textShadow"
+                    : "about-headline custom-text"
+                }
+              >
                 My philosophy is simple:
               </p>
               <small>
-                <strong className="textShadow">
+                <strong className={darkMode === "true" ? "white" : "black"}>
                   The level of your success can be found in your daily routine.
                 </strong>
                 <hr className="marginBottom" />
-                Just like <em className="diff-text">Aristotle</em> once said:
+                Just like{" "}
+                <em
+                  className={
+                    darkMode === "true"
+                      ? "text-secondary textShadow"
+                      : "about-headline custom-text"
+                  }
+                >
+                  Aristotle
+                </em>{" "}
+                once said:
                 <blockquote
                   className={
                     darkMode === "true"
@@ -90,21 +130,38 @@ const About = () => {
                   We are what we repeatedly do. Excellence, then, is not an act,
                   but a habit.
                 </blockquote>
-                <p className="about-parts">
+                <p className={darkMode === "true" ? "about-parts" : "black"}>
                   I am not simply about self-development but rather, rising as
                   part of a team. My credo is{" "}
-                  <span className="diff-text">“Let's win together!”</span> I am
-                  not solely about self-development but rising as part of a
+                  <span
+                    className={
+                      darkMode === "true"
+                        ? "text-secondary textShadow"
+                        : "about-headline custom-text"
+                    }
+                  >
+                    “Let's win together!”
+                  </span>{" "}
+                  I am not solely about self-development but rising as part of a
                   team. My credo is “Let’s win together!” If something is
                   holding us back, adaptation may be needed, such as a different
                   approach, new habit, or the need to think outside our purview.
-                  I live and breathe positivity that is all around me. I enjoy
-                  collaborating, sharing and receiving knowledge, and developing
-                  strong teamwork environments.
+                  I live and breathe the positivity that is all around me. I
+                  enjoy collaborating, sharing and receiving knowledge, and
+                  developing strong teamwork environments.
                 </p>
                 <hr />
                 In the words of the great
-                <em className="diff-text"> Howard Hughes:</em>
+                <em
+                  className={
+                    darkMode === "true"
+                      ? "text-secondary textShadow"
+                      : "about- custom-text"
+                  }
+                >
+                  {" "}
+                  Howard Hughes:
+                </em>
                 <blockquote
                   className={
                     darkMode === "true"
@@ -115,14 +172,18 @@ const About = () => {
                   Don't tell me I can't do it; Don't tell me it can't be done.
                 </blockquote>
                 <p
-                  className="text-secondary textShadow"
-                  style={{ fontSize: "1.25rem" }}
+                  className={
+                    darkMode === "true"
+                      ? "text-secondary textShadow"
+                      : "about-headline"
+                  }
+                  style={{ fontSize: "1.25rem", marginTop: "1rem" }}
                 >
                   My personality may slightly differ:
                 </p>
-                <p className="about-parts">
+                <p className={darkMode === "true" ? "about-parts" : "black"}>
                   My personality may slightly differ: I am an independent
-                  thinker and carry my own weight, either alone or part of a
+                  thinker and carry my own weight, either alone or as part of a
                   team. I am purely solution orientated and when faced with a
                   problem or the ‘impossible’, I go into overdrive and attempt
                   to find an adequate solution. When individuality is scarce,
@@ -130,16 +191,27 @@ const About = () => {
                   focus, composure, and calmness - creating true clarity. Great
                   ideas stem from agile, efficient, creative, collaborative work
                   fueled by curiosity and exploration. I can work independently,
-                  however, I’m a true believer in the phrase:{" "}
+                  however, I’m a true believer in the phrase:
                   <span className="teamwork">
-                    <b className="text-secondary textShadow">
-                      "Teamwork makes the dream work"
+                    <b
+                      className={
+                        darkMode === "true"
+                          ? "text-secondary textShadow"
+                          : "about-headline custom-text"
+                      }
+                    >
+                      {" "}
+                      "Teamwork makes the dream work."
                     </b>
                   </span>
                 </p>
               </small>
               <p
-                className="text-secondary textShadow"
+                className={
+                  darkMode === "true"
+                    ? "text-secondary textShadow"
+                    : "about-headline custom-text"
+                }
                 style={{ fontSize: "1.25rem" }}
               >
                 My thinking process:
@@ -157,113 +229,135 @@ const About = () => {
                   {" "}
                   ➖
                 </span>{" "}
-                <em className="black marginBottom">Richard Feynman</em>
+                <em>Richard Feynman</em>
               </blockquote>
-              <small className="about-parts">
+              <small className={darkMode === "true" ? "about-parts" : "black"}>
                 My thinking process is based on a problem-solving technique
                 called “reasoning from first principles” or just first
                 principles. It requires you to break down a complex problem into
-                its most basic, foundational elements. The idea: to ground
+                its most basic, foundational elements. The idea is to ground
                 yourself in the foundational truths and build up from there. To
                 follow this principle is like becoming an endlessly curious
                 child again! Question anything and everything. Aristotle defined
                 a first principle as, “the first basis from which a thing is
-                known.” In short, just ask why regarding everything, everytime.
+                known.” In short, just ask why regarding everything, every time.
               </small>{" "}
             </div>
 
             {/* ********************************************************** 
-                TECH-STACK PART -> TO-DO: ADD ICONS AND ANIMATIONS */}
+                TECH-STACK PART */}
 
-            <div className="job job-1 textShadow animate__animated animate__backInLeft animate__delay-2s">
+            <div
+              className={
+                darkMode === "true"
+                  ? "tech-stack-light black job job-1 animate__animated animate__backInLeft animate__delay-2s"
+                  : "tech-stack-dark job job-1 animate__animated animate__backInLeft animate__delay-2s"
+              }
+            >
               <h3 className="text-secondary specialFont bold">
-                <span className="diff-text bold">Tech stack:</span>
+                <span
+                  className={
+                    darkMode === "true" ? "sub-headings bold" : "bold white"
+                  }
+                >
+                  Tech stack:
+                </span>
               </h3>
-              <h5 className={darkMode ? "black" : "white"}>
+              <h4 className={darkMode === "true" ? "black" : "white"}>
                 Technologies that I'm familiar with, practice and use daily:
-              </h5>
-              <ul className="firstStack about__list">
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  <Icon name={HTML5} /> <b className="text-secondary">HTML5 </b>
+              </h4>
+              <ul className="about__list">
+                <li>
+                  <Icon name={HTML5} /> <b className="custom-text">HTML5 </b>
                   <br />
-                  <i>[w/ the newest standards & approaches] </i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [w/ the newest standards & approaches]{" "}
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  <Icon name={CSS3} /> <b className="text-secondary">CSS 3 </b>{" "}
+                <li>
+                  <Icon name={CSS3} /> <b className="custom-text">CSS 3 </b>{" "}
                   <br />
-                  <i>[Grid, Flexbox, Animations, Sass]</i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [Grid, Flexbox, Animations, Sass]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  <Icon name={_js} />{" "}
-                  <b className="text-secondary">JavaScript </b>
+                <li>
+                  <Icon name={_js} /> <b className="custom-text">JavaScript </b>
                   <br />
-                  <i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
                     [proficient with vanilla <b>ES6</b> and above]
                   </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <Icon name={_react} />{" "}
-                  <b className="text-secondary">React 17+ </b>
+                  <b className="custom-text">React 17+ </b>
                   <br />
-                  <i>[familiar with its entire ecosystem]</i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [familiar with its entire ecosystem]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  <Icon name={redux} /> <b className="text-secondary">Redux </b>
+                <li>
+                  <Icon name={redux} /> <b className="custom-text">Redux </b>
                   <br />
-                  <i>[my essential tool for state management]</i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [my essential tool for state management]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  <Icon name={node} />{" "}
-                  <b className="text-secondary">NodeJS </b>
+                <li>
+                  <Icon name={node} /> <b className="custom-text">NodeJS </b>
                   <br />
-                  <i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
                     [mostly with <b>Express</b> & <b>SailsJS </b>too]
                   </i>
                   <br />
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  <Icon name={mongo} />{" "}
-                  <b className="text-secondary">MongoDB </b>
+                <li>
+                  <Icon name={mongo} /> <b className="custom-text">MongoDB </b>
                   <br />
-                  <i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
                     [natively or/ and with <b>Mongoose</b>]
                   </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <Icon name={bootstrap} />{" "}
-                  <b className="text-secondary">Bootstrap 4 </b>
+                  <b className="custom-text">Bootstrap 4 </b>
                   <br />
-                  <i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
                     [great with <b>Materialize CSS</b> too]
                   </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  <Icon name={graph} />{" "}
-                  <b className="text-secondary">GraphQL </b>
+                <li>
+                  <Icon name={graph} /> <b className="custom-text">GraphQL </b>
                   <br />
-                  <i>[as an alternative to RESTful APIs]</i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [as an alternative to RESTful APIs]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <Icon name={firebase} />{" "}
-                  <b className="text-secondary">Firebase </b>
+                  <b className="custom-text">Firebase </b>
                   <br />
-                  <i>[Firestore, Hosting, Realtime DB, etc.]</i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [Firestore, Hosting, Realtime DB, etc.]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <Icon name={socket} />{" "}
-                  <b className="text-secondary">Socket.IO </b>
+                  <b className="custom-text">Socket.IO </b>
                   <br />
-                  <i>[familiar with websocket's protocol]</i>
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [familiar with websocket's protocol]
+                  </i>
                 </li>
 
                 <br />
@@ -271,99 +365,108 @@ const About = () => {
             </div>
 
             {/* Additional tech */}
-            <div className="job job-2 textShadow animate__animated animate__backInUp animate__delay-2s">
+            <div
+              className={
+                darkMode === "true"
+                  ? "tech-stack-light job job-2 animate__animated animate__backInUp animate__delay-2s"
+                  : "tech-stack-dark job job-2 animate__animated animate__backInUp animate__delay-2s"
+              }
+            >
               <h3 className="text-secondary specialFont bold">
-                <span className="diff-text bold">Additional utilities:</span>
+                <span
+                  className={
+                    darkMode === "true" ? "sub-headings bold" : "bold white"
+                  }
+                >
+                  Additional utilities:
+                </span>
               </h3>
-              <h5 className={darkMode ? "black" : "white"}>
+              <h4 className={darkMode === "true" ? "black" : "white"}>
                 Some of additional tools and libraries that I use regularly:
-              </h5>
+              </h4>
               <ul className="secondStack about__list">
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <br />
-                  <img
-                    style={{ cursor: "pointer" }}
-                    src={git}
-                    alt={git}
-                    width="24"
-                    height="24"
-                  />{" "}
-                  <b className="text-secondary">Git </b>
-                  <i>[as my version control system]</i>
+                  <img src={git} alt={git} width="24" height="24" />{" "}
+                  <b className="custom-text">Git </b>
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    <br />
+                    [as my version control system]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  <img
-                    style={{ cursor: "pointer" }}
-                    src={webpack}
-                    alt={webpack}
-                    width="24"
-                    height="24"
-                  />{" "}
-                  <b className="text-secondary">Webpack </b>
-                  <i>[for module bundling]</i>
+                <li>
+                  <img src={webpack} alt={webpack} width="24" height="24" />{" "}
+                  <b className="custom-text">Webpack </b> <br />
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [for module bundling]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <Icon name={gulp} />
-                  <b className="text-secondary">Gulp </b>
-                  <i>[when a task runner is required]</i>
+                  <b className="custom-text">Gulp </b> <br />
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [when a task runner is required]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <Icon name={babel1} />
-                  <b className="text-secondary">Babel </b>
-                  <i>[for backward compatibility of ES6+]</i>
+                  <b className="custom-text">Babel </b> <br />
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [for backward compatibility of ES6+]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
-                  ¸
+                <li>
                   <Icon name={postman} />
                   {"  "}
-                  <b className="text-secondary">Postman </b>
-                  <i>[API development testing tool]</i>
+                  <b className="custom-text">Postman </b> <br />
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [API development testing tool]
+                  </i>
                 </li>
 
-                <li
-                  style={{ marginTop: ".2rem" }}
-                  className={darkMode === "true" ? "black" : "white"}
-                >
+                <li style={{ marginTop: ".2rem" }}>
                   <Icon name={lodash} height="17px" width="20px" />
                   {"  "}
-                  <b className="text-secondary">Lodash </b>
-                  <i>[often required as my helper library]</i>
+                  <b className="custom-text">Lodash </b> <br />
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [often required as my helper library]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <Icon name={jest} />
-                  <b className="text-secondary">Jest, Enzyme, Mocha </b>
-                  <i>[as my testing utilities]</i>
+                  <b className="custom-text">Jest, Enzyme, Mocha </b> <br />
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [as my testing utilities]
+                  </i>
                 </li>
 
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li>
                   <Icon name={handlebars} />{" "}
-                  <b className="text-secondary">EJS/ HBS </b>
-                  <i>[when all focus is on the backend]</i>
+                  <b className="custom-text">EJS/ HBS </b> <br />
+                  <i className={darkMode === "true" ? "black" : "white"}>
+                    [when all focus is on the backend]
+                  </i>
                 </li>
               </ul>
               <hr />
 
-              <h4 className="marginTop">
-                <b className="diff-text">Deployment:</b>{" "}
+              <h4 className="">
+                <b className="custom-text">Deployment:</b>{" "}
                 <span className={darkMode === "true" ? "black" : "white"}>
                   I use various platforms depending on the type and the size of
                   the project:
                 </span>
-                <span className="diff-text">
+                <span className="custom-text ">
                   {" "}
                   Heroku, Firebase, Netlify, App Engine, AWS, Google Cloud.
                 </span>
               </h4>
-              <h4
-                className={
-                  darkMode === "true" ? "black marginTop" : "white marginTop"
-                }
-              >
+              <h4 className={darkMode === "true" ? "black" : "white"}>
                 As the skills and experience of a developer grow, so does the
                 list of tools used. It comes to a point where it is hard to list
                 everything, but to me, the ones listed above are the most
@@ -373,10 +476,22 @@ const About = () => {
 
             {/* Additional Info:
              */}
-            <div className="job job-3 textShadow animate__animated animate__backInUp animate__delay-2s">
+            <div
+              className={
+                darkMode === "true"
+                  ? "tech-stack-light job job-3 animate__animated animate__backInUp animate__delay-2s"
+                  : "tech-stack-dark job job-3 animate__animated animate__backInUp animate__delay-2s"
+              }
+            >
               {" "}
               <h3 className="text-secondary specialFont bold">
-                Additional Info:
+                <span
+                  className={
+                    darkMode === "true" ? "sub-headings bold" : "bold white"
+                  }
+                >
+                  Additional Info:
+                </span>
               </h3>
               <ul className="thirdStack about__list">
                 <li>
@@ -385,11 +500,11 @@ const About = () => {
                     The technology stack that I'm currently most focused on and
                     exclusively work with is:
                   </span>
-                  <b className="text-secondary textShadow">
+                  <b className="custom-text">
                     {" "}
                     <br />
-                    <span className="the_mern_stack text-secondary textShadow">
-                      The M E R N stack
+                    <span className="the_mern_stack custom-text sub-headings">
+                      The <br /> M E R N stack
                     </span>
                     <span
                       style={{ fontSize: ".85rem" }}
@@ -416,20 +531,22 @@ const About = () => {
                 <li className={darkMode === "true" ? "black" : "white"}>
                   <br />A programming language that I'm familiar with, but
                   haven't used for a very long time:
-                  <b className="text-secondary"> Java.</b> <Icon name={java3} />
+                  <b className="costum-text"> Java.</b> <Icon name={java3} />
                 </li>
                 <li className={darkMode === "true" ? "black" : "white"}>
                   A programming language that I plan to learn and would like to
                   work with in the future:{" "}
-                  <b className="text-secondary"> Python.</b>{" "}
-                  <Icon name={python} />
+                  <b className="custom-text"> Python.</b> <Icon name={python} />
                 </li>
-                <li className={darkMode === "true" ? "black" : "white"}>
+                <li className={darkMode === "true" ? "white" : "black"}>
                   <br />
                   <span className="editor">
                     <Icon name={code} width="30" height="30" />
 
-                    <span style={{ marginLeft: ".33rem" }}>
+                    <span
+                      style={{ marginLeft: ".33rem" }}
+                      className={darkMode === "true" ? "black" : "white"}
+                    >
                       {" "}
                       My favourite code editor is VS Code.{" "}
                     </span>
@@ -438,7 +555,8 @@ const About = () => {
                 </li>
               </ul>
               <hr />
-              <h4 className="marginTop diff-text">
+              <br />
+              <h4 className="marginTop custom-text b-white">
                 When I'm not coding, learning new programming skills, or
                 advancing the existing ones, I'm doing one of the following:
               </h4>
@@ -460,7 +578,7 @@ const About = () => {
           </div>
         </main>
       </Wrapper>
-    </Fragment>
+    </>
   );
 };
 

@@ -2,6 +2,15 @@
 @import url("./animations.css");
 @import url("./formStyle.css");
 
+body {
+  background: #444;
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
 span.the_mern_stack {
   color: #eece1a;
   display: flex;
@@ -212,15 +221,6 @@ nav a:hover {
   color: #eece1a;
 }
 
-body {
-  background: #444;
-  color: #fff;
-  height: 100vh;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-}
-
 .menu-btn {
   position: absolute;
   color: #eece1a;
@@ -232,7 +232,8 @@ body {
 }
 
 .menu-btn__add {
-  color: #fff;
+  color: #000;
+  text-shadow: 2px 1px 4px #b22222;
 }
 
 .menu-btn__add::before {
@@ -402,7 +403,7 @@ h3.sm-heading {
   font-weight: bold;
   margin-bottom: 2rem;
   padding: 0.5rem 0.5rem;
-  background: rgba(73, 73, 73, 0.5);
+  /* background: rgba(73, 73, 73, 0.5); */
 }
 
 a {
@@ -520,10 +521,9 @@ header {
 
 .projects img {
   width: 100%;
-  /* padding: 3px;
-  background-color: #dbdb30; */
-  border: 2px solid #ffff;
+  /* border: 2px solid #eece1a; */
   padding: 1px;
+  border-radius: 7px;
 }
 
 .boxes {
@@ -576,7 +576,7 @@ header {
 .btn-dark {
   background: black;
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #b22222;
 }
 
 .btn-light {
@@ -1116,4 +1116,188 @@ textarea.reverse {
   .header-break {
     display: none;
   }
+}
+
+/* ************************************** */
+
+.white-theme {
+  background-color: #dcdcdc;
+  color: #000000;
+}
+
+.black-theme {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.custom-text {
+  color: black;
+  text-shadow: 1px -1px 2px #b22222;
+}
+
+.custom-text-white {
+  color: #eece1a;
+  text-shadow: 1px -1px 2px #000000;
+}
+
+.tech-stack-light {
+  background-color: #dcdcdc !important;
+}
+.tech-stack-dark {
+  background-color: #444 !important;
+}
+
+.theme-icon-sun {
+  text-shadow: 1px 0px 5px rgb(197, 26, 26);
+}
+.theme-icon-star {
+  text-shadow: 1px 0px 5px rgb(40, 136, 180);
+}
+
+.gold-headings {
+  text-shadow: 3px 1px 3px black;
+  color: #eece1a;
+}
+
+.sub-headings {
+  color: #000000 !important;
+  text-shadow: #eece1a !important;
+  text-align: center;
+}
+
+.blog-author-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #b22222;
+}
+
+.blog-author-image-dark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #eece1a;
+}
+
+.post-title {
+  color: #b22222;
+  font-family: Canzel, cursive;
+}
+
+.post-title-dark {
+  color: black;
+  font-family: Canzel, cursive;
+}
+
+#single-post-image {
+  border-radius: 7px;
+  border: 2px solid #eece1a;
+}
+#single-post-image-dark {
+  border-radius: 7px;
+  border: 2px solid #b22222;
+}
+
+#arrow-left {
+  position: absolute;
+  margin-top: 50%;
+}
+#arrow-left-dark {
+  position: absolute;
+  margin-top: 50%;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.back-btn {
+  display: flex;
+  transform: translateY(-29px) translateX(35px);
+  font-size: 1.5rem;
+}
+
+.back-btn-dark {
+  display: flex;
+  transform: translateY(-29px) translateX(35px);
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.blog-images {
+  height: 600px;
+  width: 600px;
+  max-height: 1024px;
+  max-width: 964px;
+  object-fit: fill;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.blog-title {
+  color: #eece1a;
+  text-align: center;
+  color: #eece1a;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.blog-author-name {
+  color: rgba(255, 177, 66, 1);
+  margin-left: 1rem;
+}
+.blog-author-name-dark {
+  color: #b22222;
+  margin-left: 1rem;
+}
+
+figure > img {
+  height: 480px;
+  max-width: 640px;
+  width: 480px;
+  max-width: 480px;
+  object-fit: contain;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.blog-flex {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+article.blog-article {
+  margin-left: 1rem;
+}
+
+.redShaddow {
+  color: #eece1a;
+  text-shadow: 2px 0px 4px firebrick;
+}
+
+.work-heading-segments {
+  font-family: "Bungee Spice", cursive;
+  text-align: center;
+  font-size: 2.25rem;
+  text-decoration: underline;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sidebar-list {
+  width: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

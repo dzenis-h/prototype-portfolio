@@ -3,14 +3,17 @@ import {
   Switch,
   BrowserRouter as Router,
   Route,
-  Redirect,
+  // Redirect,
 } from "react-router-dom";
+
 import Home from "./components/HomeComponent";
 import About from "./components/AboutComponent";
 import Work from "./components/Work/WorkComponent";
 import Contact from "./components/contactForm/ContactComponent";
 import Footer from "./components/layout/FooterComponent";
 import Menu from "./components/layout/MenuComponent";
+import AllPosts from "./posts/Post";
+import SinglePost from "./posts/SinglePost";
 
 import "./style/darkMode.css";
 import "./style/App.css";
@@ -18,9 +21,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { ThemeProvider } from "./components/darkMode/useTheme";
 
-import { initializeApp } from 'firebase/app';
-import {firebaseConfig} from './config/config'
-
+import { initializeApp } from "firebase/app";
+import { firebaseConfig } from "./config/config";
 
 const App = () => {
   // Initialize Firebase
@@ -36,7 +38,9 @@ const App = () => {
             <Route path="/about" exact component={About} />
             <Route path="/work" exact component={Work} />
             <Route path="/contact" exact component={Contact} />
-            <Redirect to="/" />
+            <Route path="/post" exact component={AllPosts} />
+            <Route path="/post/:slug" component={SinglePost} />
+            {/* <Redirect to="/" /> */}
           </Switch>
           <Footer />
         </Router>

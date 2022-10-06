@@ -13,7 +13,11 @@ const DarkModeToggle = () => {
       <button
         type="button"
         onClick={toggleTheme}
-        className={dark ? "light-icon__reverse" : "light-icon"}
+        className={
+          dark
+            ? "light-icon__reverse theme-icon-sun"
+            : "light-icon theme-icon-sun"
+        }
       >
         ☀
       </button>
@@ -21,7 +25,11 @@ const DarkModeToggle = () => {
       <button
         type="button"
         onClick={toggleTheme}
-        className={dark ? "dark-icon__reverse" : "dark-icon"}
+        className={
+          dark
+            ? "dark-icon__reverse theme-icon-star"
+            : "dark-icon theme-icon-star"
+        }
       >
         ★
       </button>

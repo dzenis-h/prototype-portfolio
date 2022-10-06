@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const WrokTemplate = ({ mainLink, github, name, description }) => {
   const darkMode = localStorage.getItem("dark");
   return (
-    <Fragment>
+    <>
       <a
         href={mainLink}
         target="_blank"
@@ -31,13 +31,13 @@ const WrokTemplate = ({ mainLink, github, name, description }) => {
         aria-label="developers"
         style={{ textAlign: "center", letterSpacing: "4px" }}
       >
-        <span className="text-secondary textShadow">
-          <b>{name}</b>
+        <span className="custom-text">
+          <b className="">{name}</b>
         </span>
         <br />
         {description}
       </p>
-    </Fragment>
+    </>
   );
 };
 

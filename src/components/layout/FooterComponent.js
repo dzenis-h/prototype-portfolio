@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const Footer = () => {
   return (
-    <Fragment>
+    <>
       <footer id="footer">
         <article id="wrap" className="text-center">
           <div className="footer-text">
@@ -27,7 +27,7 @@ const Footer = () => {
           </article>
         </article>
       </footer>
-    </Fragment>
+    </>
   );
 };
 
