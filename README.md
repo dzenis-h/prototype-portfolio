@@ -11,7 +11,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Deployed version:
 
-https://dzenis-h.com
+https://dzenis-h-portfolio.web.app
 
 ### Achieved a perfect 100% on Google Lighthouse audit score:
 
