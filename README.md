@@ -1,4 +1,4 @@
-## Built with 💙 using create-react-app
+## Built with 💙 using React (create-react-app)
 
 #### `git clone` this repo
 
