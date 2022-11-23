@@ -16,6 +16,8 @@ src/documents/Dzenis H.pdf
 
 # dependencies
 /node_modules
+node_modules
+blog/node_modules/
 /.pnp
 .pnp.js
 build

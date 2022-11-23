@@ -15,11 +15,8 @@ import Menu from "./components/layout/MenuComponent";
 import AllPosts from "./posts/Post";
 import SinglePost from "./posts/SinglePost";
 
-import "./style/darkMode.css";
 import "./style/App.css";
 import "react-toastify/dist/ReactToastify.css";
-
-import { ThemeProvider } from "./components/darkMode/useTheme";
 
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "./config/config";
@@ -30,7 +27,6 @@ const App = () => {
 
   return (
     <Fragment>
-      <ThemeProvider>
         <Router>
           <Menu />
           <Switch>
@@ -44,7 +40,6 @@ const App = () => {
           </Switch>
           <Footer />
         </Router>
-      </ThemeProvider>
     </Fragment>
   );
 };

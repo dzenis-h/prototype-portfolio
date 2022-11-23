@@ -1,16 +1,13 @@
 import React from "react";
 
 const WrokTemplate = ({ mainLink, github, name, description }) => {
-  const darkMode = localStorage.getItem("dark");
   return (
     <>
       <a
         href={mainLink}
         target="_blank"
         rel="noopener noreferrer"
-        className={
-          darkMode === "true" ? "btn-light btn-light__reverse" : "btn-light"
-        }
+        className="btn-light"
         aria-label="Link for the deployed app"
       >
         <i className="fas fa-eye" /> Live preview
@@ -18,9 +15,7 @@ const WrokTemplate = ({ mainLink, github, name, description }) => {
       <a
         href={github}
         target="_blank"
-        className={
-          darkMode === "true" ? "btn-dark btn-dark__reverse" : "btn-dark"
-        }
+        className="btn-dark"
         rel="noopener noreferrer"
         aria-label="Open gitHub repo for this program"
       >

@@ -4,9 +4,6 @@ import sanityClient from "./Blog_Init";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
-import Toggle from "../components/darkMode/ToggleContainer";
-import { useTheme } from "../components/darkMode/useTheme";
-
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -15,9 +12,6 @@ function urlFor(source) {
 export default function SinglePost() {
   const [singlePost, setSinglePost] = useState(null);
   const { slug } = useParams();
-
-  const themeState = useTheme();
-  const darkMode = localStorage.getItem("dark");
 
   useEffect(() => {
     sanityClient
@@ -44,21 +38,13 @@ export default function SinglePost() {
   if (!singlePost) return <div>Loading...</div>;
 
   return (
-    <main
-      id="single-post"
-      className={darkMode === "true" ? "dark-theme" : "white-theme"}
-    >
-      <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
-
+    <main id="single-post" className="white-theme">
       <Link to="/post">
         <i
-          id={darkMode === "true" ? "arrow-left" : "arrow-left-dark"}
+          id="arrow-left-dark"
           className="fas fa-arrow-left fa-2x redShaddow arrow-left"
         >
-          <span className={darkMode === "true" ? "back-btn" : "back-btn-dark"}>
-            {" "}
-            Go back
-          </span>
+          <span className="back-btn-dark"> Go back</span>
         </i>
       </Link>
       <article className="">
@@ -70,11 +56,7 @@ export default function SinglePost() {
             src={singlePost.mainImage.asset.url}
             alt={singlePost.title}
             className="blog-images center-image single-post-image"
-            id={
-              darkMode === "true"
-                ? "single-post-image"
-                : "single-post-image-dark"
-            }
+            id="single-post-image-dark"
           />
         </div>
         <div className="">
@@ -90,17 +72,9 @@ export default function SinglePost() {
         <img
           src={urlFor(singlePost.authorImage).url()}
           alt={singlePost.name}
-          className={
-            darkMode === "true" ? "blog-author-image-dark" : "blog-author-image"
-          }
+          className="blog-author-image"
         />
-        <p
-          className={
-            darkMode === "true" ? "blog-author-name" : "blog-author-name-dark"
-          }
-        >
-          {singlePost.name}
-        </p>
+        <p className="blog-author-name-dark">{singlePost.name}</p>
       </div>
     </main>
   );

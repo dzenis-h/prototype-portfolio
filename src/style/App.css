@@ -3,7 +3,7 @@
 @import url("./formStyle.css");
 
 body {
-  background: #444;
+  background: #666;
   color: #fff;
   height: 100vh;
   margin: 0;
@@ -28,8 +28,9 @@ span.the_mern_stack {
 }
 
 .heading-about {
+  font-family: Canzel, "Verdena";
   color: black !important;
-  text-shadow: 1px 1px #fff !important;
+  text-shadow: 1px 1px 5px rgb(133, 15, 15) !important;
 }
 
 .white {
@@ -480,6 +481,15 @@ header {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+  background: #7d7e7d; /* Old browsers */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
 }
 
 .highlightedProject {
@@ -1132,7 +1142,7 @@ textarea.reverse {
 
 .custom-text {
   color: black;
-  text-shadow: 1px -1px 2px #b22222;
+  text-shadow: 1px 1px 10px #eece1a;
 }
 
 .custom-text-white {
@@ -1204,7 +1214,7 @@ textarea.reverse {
 }
 #arrow-left-dark {
   position: absolute;
-  margin-top: 50%;
+  margin-top: 10%;
   color: rgba(0, 0, 0, 0.55);
 }
 

@@ -9,11 +9,9 @@ const InputField = ({
   onChange,
   isRequired,
   placeholder,
-  darkMode,
   rows,
   textarea,
 }) => {
-  let isDark = darkMode === 'true' ? 'reverse' : '';
 
   if (!textarea) {
     return (
@@ -26,7 +24,6 @@ const InputField = ({
           onChange={onChange}
           required={isRequired}
           placeholder={placeholder}
-          className={isDark}
         />
       </div>
     );
@@ -41,7 +38,6 @@ const InputField = ({
           onChange={onChange}
           required={isRequired}
           placeholder={placeholder}
-          className={isDark}
         ></textarea>
       </div>
     );
