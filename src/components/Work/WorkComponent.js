@@ -123,8 +123,9 @@ const Work = () => {
           {" "}
           <h4 className="work-heading-segments"> FULL STACK APPS</h4>
         </b>
+
         <div className="projects">
-          {/* <div className="item">
+          <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
                 webp={Dev_Spot_5}
@@ -139,7 +140,7 @@ const Work = () => {
               name="Dev_Spot"
               description="It's a social network for developers 💻"
             />
-          </div> */}
+          </div>
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>

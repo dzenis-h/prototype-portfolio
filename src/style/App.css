@@ -1294,7 +1294,7 @@ article.blog-article {
   font-family: "Bungee Spice", cursive;
   text-align: center;
   font-size: 2.25rem;
-  text-decoration: underline;
+  /* text-decoration: underline */
 }
 
 .blog-list {

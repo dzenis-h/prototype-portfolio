@@ -34,9 +34,9 @@ const HighlightedList = ({ openVideo }) => {
       <li>
         <b>Google APIs</b> <i>[OAuth2, Drive & Spreadsheets]</i>
       </li>
-      {/* <li>
+      <li>
           jQuery & Lodash <i>(as helper libraries)</i>
-        </li> */}
+        </li>
       <li>... and so much more</li>
       <hr />
       <div className="highlightedList__icons">
