@@ -103,7 +103,7 @@ const Contact = () => {
                 text="Send me an Email"
               />
               <SideLink
-                link="tel:00387603374577"
+                link="tel:00387644543006"
                 linkAlt="Phone number field"
                 icon="fas fa-mobile-alt"
                 text="Call my Phone"

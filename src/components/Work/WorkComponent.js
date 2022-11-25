@@ -135,7 +135,7 @@ const Work = () => {
             </Suspense>
 
             <WrokTemplate
-              mainLink="https://dev--spot.herokuapp.com/"
+              mainLink="https://the-dev-spot.herokuapp.com"
               github="https://github.com/dzenis-h/devSpot"
               name="Dev_Spot"
               description="It's a social network for developers 💻"
