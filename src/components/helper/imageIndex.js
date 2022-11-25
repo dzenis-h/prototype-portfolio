@@ -31,6 +31,7 @@ export const iBookMark_30 = require("../../assets/img/projects/iBookMark_27.webp
 export const DataSearch_31 = require("../../assets/img/projects/DataSearch_31.webp");
 export const BiggaPublishing_29 = require("../../assets/img/projects/BiggaPublishing_29.webp");
 export const NoteAPP_32 = require("../../assets/img/projects/NoteAPP_32.webp");
+export const TextReader_32 = require("../../assets/img/projects/TextReader_33.webp");
 
 // // BACKUP IMAGES FOR OLDER BROWSER
 export const BalkanRecipes = require("../../assets/backup/BalkanRecipes.jpg");
@@ -65,3 +66,4 @@ export const iBookMark = require("../../assets/backup/iBookMark.jpg");
 export const DataSearch = require("../../assets/backup/DataSearch.jpg");
 export const BiggaPublishing = require("../../assets/backup/BiggaPublishing.jpg");
 export const NoteAPP = require("../../assets/backup/NoteAPP.jpg");
+export const TextReader = require("../../assets/backup/TextReader.jpg");

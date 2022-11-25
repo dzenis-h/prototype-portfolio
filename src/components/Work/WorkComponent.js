@@ -36,6 +36,8 @@ import {
   TheMERNShop_21,
   ImageSearch_26,
   ReactiveOrders,
+  TextReader,
+  TextReader_32,
   //  =====================
   BalkanRecipes,
   BiggaFileUploads,
@@ -280,6 +282,22 @@ const Work = () => {
               github="https://github.com/dzenis-h/Reactive-tube"
               name="Reactive Tube"
               description="React-Redux app that uses YouTube API 🎦"
+            ></WrokTemplate>
+          </div>
+          
+          <div className="item">
+            <Suspense fallback={<div className="loader"></div>}>
+              <ImageComponent
+                webp={TextReader_32}
+                jpg={TextReader}
+                title="Text Reader"
+              />
+            </Suspense>
+            <WrokTemplate
+              mainLink="https://speech-text-reader.web.app"
+              github="https://github.com/dzenis-h/text-reader"
+              name="Reactive Tube"
+              description="It uses the Web Speech API in order to turn text into voice 🔊"
             ></WrokTemplate>
           </div>
 
