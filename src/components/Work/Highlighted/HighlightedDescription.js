@@ -7,7 +7,7 @@ const HighlightedDescription = () => {
         className="textShaddow"
         style={{ letterSpacing: "4px", textAlign: "center" }}
       >
-          <h4 className="work-heading-segments"> HIGHLIGHTED APP</h4>
+          <h4 className="work-heading-segments"> Highlighted App</h4>
         <span className="text-secondary" aria-label="dash">
 
           <b>

@@ -2,6 +2,8 @@
 @import url("./animations.css");
 @import url("./formStyle.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
 body {
   background: #666;
   color: #fff;
@@ -1291,9 +1293,11 @@ article.blog-article {
 }
 
 .work-heading-segments {
-  font-family: "Bungee Spice", cursive;
+  font-family: "Tangerine", cursive;
   text-align: center;
-  font-size: 2.25rem;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: bold;
   /* text-decoration: underline */
 }
 
