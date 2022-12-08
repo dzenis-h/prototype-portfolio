@@ -1,5 +1,7 @@
 import React from "react";
 
+const darkMode = localStorage.getItem("dark");
+
 const WrokTemplate = ({ mainLink, github, name, description }) => {
   return (
     <>
@@ -26,8 +28,8 @@ const WrokTemplate = ({ mainLink, github, name, description }) => {
         aria-label="developers"
         style={{ textAlign: "center", letterSpacing: "4px" }}
       >
-        <span className="custom-text">
-          <b className="">{name}</b>
+        <span className={darkMode === "true" ? "bold-dark" : "bold-light"}>
+          <b>{name}</b>
         </span>
         <br />
         {description}

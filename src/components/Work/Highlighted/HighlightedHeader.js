@@ -1,12 +1,18 @@
 import React, { Fragment } from "react";
 
 const HighlightedHeader = () => {
+  const darkMode = localStorage.getItem("dark");
+  // specialFont bold textShadow
   return (
     <Fragment>
       <div className="text-secondary otherApps">
         <hr />
         <h3
-          className="work-subtitle black specialFont bold textShadow"
+          className={
+            darkMode === "true"
+              ? "work-subtitle white specialFont bold textShadow"
+              : "work-subtitle black specialFont bold textShadow"
+          }
           style={{ fontSize: "1.1rem" }}
         >
           I develop software every day. Below is a shortened and adapted list of
@@ -17,15 +23,19 @@ const HighlightedHeader = () => {
 
       <p className="header-note">
         <span className="custom-text" aria-label="dash">
-          <b className="note">
+          <b className={darkMode === "true" ? "note__reverse" : "note"}>
             <i>Note</i>➖{" "}
           </b>
         </span>
         Some apps may take longer to load simply because they were deployed
-        using a <b className="dark"> "FREE TIER"</b> account.{" "}
-        <br className="header-break" />
+        using a{" "}
+        <b className={darkMode === "true" ? "diff-text" : "dark"}>
+          {" "}
+          "FREE TIER"
+        </b>{" "}
+        account. <br className="header-break" />
         Thank you for understanding.{" "}
-        <b className="dark">
+        <b className={darkMode === "true" ? "bold-light" : "bold-dark"}>
           I'm in the process of finalizing multiple projects, so more apps will
           be added soon.
         </b>

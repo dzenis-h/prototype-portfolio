@@ -5,6 +5,10 @@ import jpg_Portrait from "../assets/backup/portrait.jpg";
 
 import Icon from "../components/helper/IconComponent";
 
+import Toggle from "./darkMode/ToggleContainer";
+import { useTheme } from "./darkMode/useTheme";
+import { Wrapper } from "./darkMode/Wrapper";
+
 import HTML5 from "../assets/icons/html.png";
 import CSS3 from "../assets/icons/css.png";
 import _react from "../assets/icons/react.png";
@@ -30,12 +34,35 @@ import socket from "../assets/icons/socket.jpg";
 import node from "../assets/icons/node.png";
 
 const About = () => {
+  const themeState = useTheme();
+  const darkMode = localStorage.getItem("dark");
+
   return (
     <>
-        <main id="about" className="white-theme">
+      <Wrapper>
+        <main
+          id="about"
+          className={darkMode === "true" ? "dark-theme" : "white-theme"}
+        >
+          <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
           <h1 className="lg-heading textShadow">
-            <span className=" heading-about">About</span>
-            <i className="dark-heading gold-headings"> Me</i>{" "}
+            <span
+              className={
+                darkMode === "true" ? "white heading-about" : " heading-about"
+              }
+            >
+              About
+            </span>
+            <i
+              className={
+                darkMode === "true"
+                  ? "text-secondary textShadow"
+                  : "about-headline custom-text"
+              }
+            >
+              {" "}
+              Me
+            </i>{" "}
           </h1>
           <h2 className="sm-heading">
             A snapshot of what you can expect from me:
@@ -51,8 +78,16 @@ const About = () => {
             </picture>
 
             <div className="bio">
-              <h3 className="about-headline custom-text">Intro:</h3>
-              <small className="black">
+              <h3
+                className={
+                  darkMode === "true"
+                    ? "text-secondary textShadow"
+                    : "about-headline custom-text"
+                }
+              >
+                Intro:
+              </h3>
+              <small className={darkMode === "true" ? "about-parts" : "black"}>
                 I’m a go-getter, always up-to-date with the latest tech, web
                 protocols, tools, and software development standards.
                 Programming is my passion. My ultimate goal is to become a
@@ -61,60 +96,109 @@ const About = () => {
                 driven individual.
               </small>
               <hr />
-              <p className="about-headline custom-text">
+              <p
+                className={
+                  darkMode === "true"
+                    ? "text-secondary textShadow"
+                    : "about-headline custom-text"
+                }
+              >
                 My philosophy is simple:
               </p>
               <small>
-                <strong className="black">
+                <strong className={darkMode === "true" ? "white" : "black"}>
                   The level of your success can be found in your daily routine.
                 </strong>
                 <hr className="marginBottom" />
                 Just like{" "}
-                <em className="about-headline custom-text">Aristotle</em> once
-                said:
-                <blockquote className="sunflower">
+                <em
+                  className={
+                    darkMode === "true"
+                      ? "text-secondary textShadow"
+                      : "about-headline custom-text"
+                  }
+                >
+                  Aristotle
+                </em>{" "}
+                once said:
+                <blockquote
+                  className={
+                    darkMode === "true"
+                      ? "sunflower sunflower__reverse"
+                      : "sunflower"
+                  }
+                >
                   We are what we repeatedly do. Excellence, then, is not an act,
                   but a habit.
                 </blockquote>
-                <p className="black">
+                <p className={darkMode === "true" ? "about-parts" : "black"}>
                   I am not simply about self-development but rather, rising as
                   part of a team. My credo is{" "}
-                  <span className="about-headline custom-text">
-                    “Let's win together!”
+                  <span
+                    className={
+                      darkMode === "true"
+                        ? "text-secondary textShadow"
+                        : "about-headline custom-text"
+                    }
+                  >
+                    “Let's win together!”.
                   </span>{" "}
-                  I am not solely about self-development but rising as part of a
-                  team. My credo is “Let’s win together!” If something is
-                  holding us back, adaptation may be needed, such as a different
-                  approach, new habit, or the need to think outside our purview.
-                  I live and breathe the positivity that is all around me. I
-                  enjoy collaborating, sharing and receiving knowledge, and
-                  developing strong teamwork environments.
+                  If something is holding us back, adaptation may be needed,
+                  such as a different approach, new habit, or the need to think
+                  outside our purview. I live and breathe the positivity that is
+                  all around me. I enjoy collaborating, sharing and receiving
+                  knowledge, and developing strong teamwork environments.
                 </p>
                 <hr />
                 In the words of the great
-                <em className="about- custom-text"> Howard Hughes:</em>
-                <blockquote className="sunflower">
+                <em
+                  className={
+                    darkMode === "true"
+                      ? "text-secondary textShadow"
+                      : "about- custom-text"
+                  }
+                >
+                  {" "}
+                  Howard Hughes:
+                </em>
+                <blockquote
+                  className={
+                    darkMode === "true"
+                      ? "sunflower sunflower__reverse"
+                      : "sunflower"
+                  }
+                >
                   Don't tell me I can't do it; Don't tell me it can't be done.
                 </blockquote>
                 <p
-                  className="about-headline"
+                  className={
+                    darkMode === "true"
+                      ? "text-secondary textShadow"
+                      : "about-headline"
+                  }
                   style={{ fontSize: "1.25rem", marginTop: "1rem" }}
                 >
                   My personality may slightly differ:
                 </p>
-                <p className="black">
-                  My personality may slightly differ: I am an independent
-                  thinker and carry my own weight, either alone or as part of a
-                  team. I am purely solution orientated and when faced with a
-                  problem or the ‘impossible’, I go into overdrive and attempt
-                  to find an adequate solution. When individuality is scarce,
-                  teamwork prevails. The best results are achieved through
-                  focus, composure, and calmness - creating true clarity. Great
-                  ideas stem from agile, efficient, creative, collaborative work
-                  fueled by curiosity and exploration. I can work independently,
-                  however, I’m a true believer in the phrase:
+                <p className={darkMode === "true" ? "about-parts" : "black"}>
+                  I am an independent thinker and carry my own weight, either
+                  alone or as part of a team. I am purely solution orientated
+                  and when faced with a problem or the ‘impossible’, I go into
+                  overdrive and attempt to find an adequate solution. When
+                  individuality is scarce, teamwork prevails. The best results
+                  are achieved through focus, composure, and calmness - creating
+                  true clarity. Great ideas stem from agile, efficient,
+                  creative, collaborative work fueled by curiosity and
+                  exploration. I can work independently, however, I’m a true
+                  believer in the phrase:
                   <span className="teamwork">
-                    <b className="about-headline custom-text">
+                    <b
+                      className={
+                        darkMode === "true"
+                          ? "text-secondary textShadow"
+                          : "about-headline custom-text"
+                      }
+                    >
                       {" "}
                       "Teamwork makes the dream work."
                     </b>
@@ -122,12 +206,22 @@ const About = () => {
                 </p>
               </small>
               <p
-                className="about-headline custom-text"
+                className={
+                  darkMode === "true"
+                    ? "text-secondary textShadow"
+                    : "about-headline custom-text"
+                }
                 style={{ fontSize: "1.25rem" }}
               >
                 My thinking process:
               </p>
-              <blockquote className="sunflower">
+              <blockquote
+                className={
+                  darkMode === "true"
+                    ? "sunflower sunflower__reverse"
+                    : "sunflower"
+                }
+              >
                 “The first principle is that you must not fool yourself and you
                 are the easiest person to fool.”{" "}
                 <span role="img" aria-label="dash">
@@ -136,7 +230,7 @@ const About = () => {
                 </span>{" "}
                 <em>Richard Feynman</em>
               </blockquote>
-              <small className="black">
+              <small className={darkMode === "true" ? "about-parts" : "black"}>
                 My thinking process is based on a problem-solving technique
                 called “reasoning from first principles” or just first
                 principles. It requires you to break down a complex problem into
@@ -151,8 +245,14 @@ const About = () => {
 
             {/* ********************************************************** 
                 TECH-STACK PART */}
-
-            <div className="tech-stack-dark job job-1 animate__animated animate__backInLeft animate__delay-2s">
+        
+            <div
+              className={
+                darkMode === "true"
+                  ? "tech-stack-dark job job-1 animate__animated animate__backInLeft animate__delay-2s"
+                  : "tech-stack-white job job-1 animate__animated animate__backInLeft animate__delay-2s"
+              }
+            >
               <h3 className="text-secondary specialFont bold">
                 <span className="bold white">Tech stack:</span>
               </h3>
@@ -250,7 +350,10 @@ const About = () => {
             </div>
 
             {/* Additional tech */}
-            <div className="tech-stack-dark job job-2 animate__animated animate__backInUp animate__delay-2s">
+            <div className= {darkMode === "true"
+                  ? "tech-stack-dark job job-2 animate__animated animate__backInLeft animate__delay-2s"
+                  : "tech-stack-white job job-2 animate__animated animate__backInLeft animate__delay-2s"
+              }>
               <h3 className="text-secondary specialFont bold">
                 <span className="bold white">Additional utilities:</span>
               </h3>
@@ -335,8 +438,10 @@ const About = () => {
 
             {/* Additional Info:
              */}
-            <div className="tech-stack-dark job job-3 animate__animated animate__backInUp animate__delay-2s">
-              {" "}
+            <div className= {darkMode === "true"
+                  ? "tech-stack-dark job job-3 animate__animated animate__backInLeft animate__delay-2s"
+                  : "tech-stack-white job job-3 animate__animated animate__backInLeft animate__delay-2s"
+              }>
               <h3 className="text-secondary specialFont bold">
                 <span className="bold white">Additional Info:</span>
               </h3>
@@ -421,6 +526,7 @@ const About = () => {
             </div>
           </div>
         </main>
+      </Wrapper>
     </>
   );
 };

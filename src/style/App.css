@@ -1,8 +1,8 @@
 @import url("./additionalStyles.css");
 @import url("./animations.css");
 @import url("./formStyle.css");
-
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url("./darkMode.css");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
 
 body {
   background: #666;
@@ -21,6 +21,14 @@ span.the_mern_stack {
   margin-top: inherit;
   font-size: 24px;
   letter-spacing: 5px;
+}
+
+b.bold-dark {
+  color: black !important;
+}
+
+b.bold-light {
+  color: firebrick;
 }
 
 .black {
@@ -77,9 +85,8 @@ span.the_mern_stack {
 
 .teamwork {
   text-align: center;
-  font-fmily: cursive;
-  letterspacing: ".5rem";
-  argin-left: "1em";
+  font-family: cursive;
+  letter-spacing: ".5rem";
 }
 
 .diff-text-2 {
@@ -102,7 +109,8 @@ button:focus {
 }
 .note__reverse {
   font-size: 1.2rem;
-  text-shadow: 1px 1px 2px darkorange;
+  color: #eece1a;
+  text-shadow: 1px 1px 10px #0e0e0e;
 }
 
 .dzenis {
@@ -235,7 +243,7 @@ nav a:hover {
 }
 
 .menu-btn__add {
-  color: #000;
+  color: #eece1a;
   text-shadow: 2px 1px 4px #b22222;
 }
 
@@ -426,7 +434,8 @@ header {
 }
 
 .diff-text {
-  color: #dbdb30;
+  color: #b5b55e;
+  text-shadow: 2px solid black;
 }
 
 .extra-text {
@@ -486,12 +495,23 @@ header {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
   background: #7d7e7d; /* Old browsers */
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
-background: #7d7e7d; /* Old browsers */
-background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
-
+  background: #7d7e7d; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #7d7e7d 0%,
+    #0e0e0e 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #7d7e7d 0%,
+    #0e0e0e 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #7d7e7d 0%,
+    #0e0e0e 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
 }
 
 .highlightedProject {
@@ -1142,21 +1162,21 @@ textarea.reverse {
   color: #ffffff;
 }
 
-.custom-text {
+.custom-text-white {
   color: black;
   text-shadow: 1px 1px 10px #eece1a;
 }
 
-.custom-text-white {
+.custom-text-white-white {
   color: #eece1a;
   text-shadow: 1px -1px 2px #000000;
 }
 
 .tech-stack-light {
-  background-color: #dcdcdc !important;
+  background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%) !important;
 }
-.tech-stack-dark {
-  background-color: #444 !important;
+.tech-stack-white {
+  background: #31302f !important;
 }
 
 .theme-icon-sun {
@@ -1314,4 +1334,11 @@ article.blog-article {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app-names {
+  color: #eece1a !important;
+}
+
+.app-names__reverse {
 }

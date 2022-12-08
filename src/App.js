@@ -21,12 +21,15 @@ import "react-toastify/dist/ReactToastify.css";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "./config/config";
 
+import { ThemeProvider } from "./components/darkMode/useTheme";
+
 const App = () => {
   // Initialize Firebase
   initializeApp(firebaseConfig);
 
   return (
     <Fragment>
+      <ThemeProvider>
         <Router>
           <Menu />
           <Switch>
@@ -40,6 +43,7 @@ const App = () => {
           </Switch>
           <Footer />
         </Router>
+      </ThemeProvider>
     </Fragment>
   );
 };

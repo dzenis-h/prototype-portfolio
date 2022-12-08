@@ -7,6 +7,7 @@
   "description": "A peronal portfolio site build with the help of React and its usual friends :)",
   "private": true,
   "dependencies": {
+    "@emotion/styled": "^11.10.5",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
