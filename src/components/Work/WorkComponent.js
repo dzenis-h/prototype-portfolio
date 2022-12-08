@@ -303,7 +303,7 @@ const Work = () => {
                 />
               </Suspense>
               <WrokTemplate
-                mainLink="https://reactive-tube-2.web.app/"
+                mainLink="https://reactive-tube-2.web.app"
                 github="https://github.com/dzenis-h/Reactive-tube"
                 name="Reactive Tube"
                 description="React-Redux app that uses YouTube API 🎦"
@@ -542,7 +542,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://evolwe-example-site.firebaseapp.com/"
+                mainLink="https://evolwe-example-site.firebaseapp.com"
                 github="https://github.com/dzenis-h/evolWE"
                 name="evolWe 2.0"
                 description="A prototype of a landing page made for a client ☮"
