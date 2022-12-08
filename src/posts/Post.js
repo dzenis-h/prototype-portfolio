@@ -58,7 +58,7 @@ export default function Post() {
               Blog
             </i>{" "}
           </h1>
-          <section className="">
+          <section className="grid-posts">
             <div className="blog-flex">
               {postData &&
                 postData.map((post, index) => (
@@ -73,7 +73,7 @@ export default function Post() {
                           alt={post.mainImage.alt}
                           className="blog-author-image"
                         />
-                        <h3 className="custom-text">{post.title}</h3>
+                        <h3 className="blog-name">{post.title}</h3>
                       </span>
                     </Link>
                   </article>

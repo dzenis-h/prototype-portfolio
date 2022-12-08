@@ -86,7 +86,9 @@ b.bold-light {
 .teamwork {
   text-align: center;
   font-family: cursive;
-  letter-spacing: ".5rem";
+  letter-spacing: .5rem;
+  color: #000;
+  font-size: 2rem;
 }
 
 .diff-text-2 {
@@ -105,12 +107,16 @@ button:focus {
 
 .note {
   font-size: 1.2rem;
-  text-shadow: 2px 2px 3px #000;
+  text-shadow: 2px 2px 3px rgb(185, 162, 88);
 }
 .note__reverse {
   font-size: 1.2rem;
   color: #eece1a;
   text-shadow: 1px 1px 10px #0e0e0e;
+}
+
+.blog-name {
+  color:sienna
 }
 
 .dzenis {
@@ -244,7 +250,7 @@ nav a:hover {
 
 .menu-btn__add {
   color: #eece1a;
-  text-shadow: 2px 1px 4px #b22222;
+  text-shadow: 2px #31302f !important;
 }
 
 .menu-btn__add::before {
@@ -526,12 +532,9 @@ header {
 
 .highlightedProject img {
   width: 100%;
-  /* height: auto; */
   padding: 3px;
   border: 2px solid #ffff;
   padding: 2px;
-  /* border: 2px solid #000000;
-  background-color: #dbdb30; */
 }
 
 .otherApps {
@@ -608,7 +611,7 @@ header {
 .btn-dark {
   background: black;
   color: #fff;
-  border: 2px solid #b22222;
+  border: 2px #31302f !important;
 }
 
 .btn-light {
@@ -1201,7 +1204,7 @@ textarea.reverse {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 3px solid #b22222;
+  border: 3px solid #31302f !important;
 }
 
 .blog-author-image-dark {
@@ -1212,7 +1215,7 @@ textarea.reverse {
 }
 
 .post-title {
-  color: #b22222;
+  color: #31302f !important;
   font-family: Canzel, cursive;
 }
 
@@ -1227,7 +1230,7 @@ textarea.reverse {
 }
 #single-post-image-dark {
   border-radius: 7px;
-  border: 2px solid #b22222;
+  border: 2px solid #31302f !important;
 }
 
 #arrow-left {
@@ -1284,7 +1287,7 @@ textarea.reverse {
   margin-left: 1rem;
 }
 .blog-author-name-dark {
-  color: #b22222;
+  color: #31302f !important;
   margin-left: 1rem;
 }
 
@@ -1299,8 +1302,8 @@ figure > img {
 }
 
 div.blog-flex {
-  display: flex !important;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 article.blog-article {
@@ -1318,7 +1321,6 @@ article.blog-article {
   font-size: 3rem;
   letter-spacing: 3px;
   font-weight: bold;
-  /* text-decoration: underline */
 }
 
 .blog-list {
@@ -1338,7 +1340,4 @@ article.blog-article {
 
 .app-names {
   color: #eece1a !important;
-}
-
-.app-names__reverse {
 }

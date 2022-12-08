@@ -195,11 +195,12 @@ const About = () => {
                     <b
                       className={
                         darkMode === "true"
-                          ? "text-secondary textShadow"
-                          : "about-headline custom-text"
+                          ? "text-secondary teamwork textShadow"
+                          : "teamwork dark-text"
                       }
                     >
                       {" "}
+                      <br/>
                       "Teamwork makes the dream work."
                     </b>
                   </span>
@@ -423,7 +424,7 @@ const About = () => {
                   I use various platforms depending on the type and the size of
                   the project:
                 </span>
-                <span className="custom-text ">
+                <span className="white">
                   {" "}
                   Heroku, Firebase, Netlify, App Engine, AWS, Google Cloud.
                 </span>
@@ -505,7 +506,7 @@ const About = () => {
               </ul>
               <hr />
               <br />
-              <h4 className="marginTop custom-text b-white">
+              <h4 className="marginTop custom-text b-white white">
                 When I'm not coding, learning new programming skills, or
                 advancing the existing ones, I'm doing one of the following:
               </h4>

@@ -213,7 +213,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://mongo-share.herokuapp.com/"
+                mainLink="https://mongo-share.herokuapp.com"
                 github="https://github.com/dzenis-h/bigga_file_uploads"
                 name="Bigga File Uploads"
                 description="2 way data transfer of various file types w/ preview 🌀"
@@ -288,10 +288,7 @@ const Work = () => {
           {/* SPAs */}
           <br />
           <b>
-            <p
-              className="break-line"
-              // style={{ textDecoration: "underline" }}
-            ></p>
+            <p className="break-line"></p>
             <span className="diff-projects diff-projects-white">
               <h4 className="work-heading-segments">Single Page Apps (SPA)</h4>
             </span>
@@ -320,7 +317,7 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://dzenis-h.github.io/iZEN"
-                github="https://github.com/dzenis-h/iZEN"
+                github="https://dzenis-h.github.io/iZEN"
                 name="iZEN"
                 description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
               />
@@ -380,13 +377,13 @@ const Work = () => {
                 <ImageComponent
                   webp={NoteAPP_32}
                   jpg={NoteAPP}
-                  title="I was looking for a good web-based note keeper, so I decided to build my own"
+                  title="Web Note App"
                 />
               </Suspense>
 
               <WrokTemplate
                 mainLink="https://notes-project-2022.web.app"
-                github="https://github.com/dzenis-h"
+                github="https://github.com/dzenis-h/notes-app"
                 name="NotesX"
                 description="Notes app build with pure HTML5, CSS3, vanilla JS (ES6+) 📝📙"
               />
@@ -470,7 +467,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://balkan-recipes.firebaseapp.com/"
+                mainLink="https://balkan-recipes.web.app"
                 github="https://github.com/dzenis-h/Balkan_Recipe_Book"
                 name="Balkan Recipes"
                 description="Collect recipes and organize your shopping list 🥗"
@@ -504,7 +501,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://reactive-movies.firebaseapp.com/"
+                mainLink="https://reactive-movies.web.app"
                 github="https://github.com/dzenis-h/rubicon-movies"
                 name="Reactive Movie DB"
                 description="A fast and beautiful web app that uses the TMDb API 🎬"
@@ -635,7 +632,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://web-calorie-tracker.firebaseapp.com/"
+                mainLink="https://web-calorie-tracker.web.app"
                 github="https://github.com/dzenis-h/Calorie_Tracker"
                 name="Calorie Tracker"
                 description="Track your calories and save data into LS 🍏"
@@ -669,7 +666,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://data-search.vercel.app/"
+                mainLink="https://data-search.vercel.app"
                 github="https://github.com/dzenis-h/dataSearch"
                 name="Data Search"
                 description="Search users info by name, surname or company 👀"
