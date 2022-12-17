@@ -39,6 +39,10 @@ const HighlightedHeader = () => {
           I'm in the process of finalizing multiple projects, so more apps will
           be added soon.
         </b>
+
+        
+        
+        
       </p>
     </Fragment>
   );

@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 
+const darkMode = localStorage.getItem("dark");
+
 const HighlightedApp = ({ mainLink, github }) => {
   return (
     <Fragment>
@@ -15,7 +17,9 @@ const HighlightedApp = ({ mainLink, github }) => {
         href={github}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn-dark"
+        className={
+          darkMode === "true" ? "btn-dark btn-dark__reverse" : "btn-dark"
+        }
       >
         <i className="fab fa-github" /> Github repo
       </a>

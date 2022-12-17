@@ -17,7 +17,9 @@ const WrokTemplate = ({ mainLink, github, name, description }) => {
       <a
         href={github}
         target="_blank"
-        className="btn-dark"
+        className={
+          darkMode === "true" ? "btn-dark btn-dark__reverse" : "btn-dark"
+        }
         rel="noopener noreferrer"
         aria-label="Open gitHub repo for this program"
       >

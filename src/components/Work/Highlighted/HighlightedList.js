@@ -5,7 +5,7 @@ const HighlightedList = ({ openVideo }) => {
   return (
     <ul className="highlightedList">
       <li>
-        <b className="dark-text">
+        <b className="blog-name">
           Some of the technologies used in this app include:
         </b>
       </li>

@@ -86,7 +86,7 @@ b.bold-light {
 .teamwork {
   text-align: center;
   font-family: cursive;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   color: #000;
   font-size: 2rem;
 }
@@ -116,7 +116,7 @@ button:focus {
 }
 
 .blog-name {
-  color:sienna
+  color: sienna;
 }
 
 .dzenis {
@@ -249,7 +249,7 @@ nav a:hover {
 }
 
 .menu-btn__add {
-  color: #eece1a;
+  color: #0e0e0e;
   text-shadow: 2px #31302f !important;
 }
 
@@ -609,15 +609,27 @@ header {
 }
 
 .btn-dark {
-  background: black;
+  background: -webkit-linear-gradient(360deg, #1c1c1c 10%, #494949 360%);
+  background: -moz-linear-gradient(360deg, #1c1c1c 10%, #494949 360%);
+  background: linear-gradient(360deg, #1c1c1c 10%, #494949 360%);
   color: #fff;
-  border: 2px #31302f !important;
+  border: 2px #eece1a !important;
 }
 
 .btn-light {
-  background: #c4c4c4;
+  background: -webkit-linear-gradient(
+    360deg,
+    #dee1e1 10%,
+    #f4f4f4 360%
+  ); /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(
+    360deg,
+    #dee1e1 10%,
+    #f4f4f4 360%
+  ); /* FF3.6+ */
+  background: linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%);
   color: #000000;
-  border: 2px solid #000;
+  border: 2px solid #eece1a;
 }
 
 .btn-light__reverse {
@@ -627,7 +639,7 @@ header {
 }
 
 .btn-dark:hover {
-  border: 2px solid #000;
+  border: 2px solid firebrick !important;
 }
 .btn-light:hover {
   border: 2px solid #000000;
@@ -639,7 +651,9 @@ header {
   border: 2px solid #eece1a;
 }
 .btn-dark__reverse:hover {
-  border: 2px solid #000000;
+  border: 2px solid firebrick;
+  background-color: #fff;
+  color: #000;
 }
 
 /*  */
@@ -1340,4 +1354,16 @@ article.blog-article {
 
 .app-names {
   color: #eece1a !important;
+}
+
+.github-dark {
+  background-color: #ffffff !important;
+  color: #000 !important;
+  border: 2px solid firebrick !important;
+}
+
+.github-light {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid gold;
 }

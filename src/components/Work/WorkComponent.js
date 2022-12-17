@@ -41,6 +41,7 @@ import {
   ReactiveOrders,
   TextReader,
   TextReader_32,
+  Portfolio,
   //  =====================
   BalkanRecipes,
   BiggaFileUploads,
@@ -76,10 +77,9 @@ import {
   iBookMark,
   BiggaPublishing,
   BiggaPublishing_29,
-  DataSearch,
-  DataSearch_31,
   NoteAPP,
   NoteAPP_32,
+  Portfolio_34,
 } from "../helper/imageIndex";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
@@ -140,7 +140,7 @@ const Work = () => {
               </Suspense>
 
               <HighlightedApp
-                mainLink="https://mars-ems.herokuapp.com/index.html"
+                mainLink="https://ems-x.herokuapp.com"
                 github="https://github.com/dzenis-h/Mars-EMS"
               />
             </div>
@@ -179,7 +179,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://mini--stories.herokuapp.com/"
+                mainLink="https://mini-stories.herokuapp.com"
                 github="https://github.com/dzenis-h/mini-stories"
                 name="miniStories"
                 description="A mini social network site with many extras 📗"
@@ -213,7 +213,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://mongo-share.herokuapp.com"
+                mainLink="https://mongo-upload.herokuapp.com"
                 github="https://github.com/dzenis-h/bigga_file_uploads"
                 name="Bigga File Uploads"
                 description="2 way data transfer of various file types w/ preview 🌀"
@@ -230,7 +230,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://spacex-2020.herokuapp.com"
+                mainLink="https://spacex-2022.herokuapp.com"
                 github="https://github.com/dzenis-h/spaceX-launches"
                 name="SpaceX Launcher"
                 description="An app that interacts with the official SpaceX API 🚀"
@@ -243,7 +243,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://idea--x.herokuapp.com"
+                mainLink="https://idea.herokuapp.com"
                 github="https://github.com/dzenis-h/IDEA_x"
                 name="idea_X"
                 description="Save ideas for your next coding project 💡"
@@ -277,7 +277,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://node-book-shop.herokuapp.com"
+                mainLink="https://node-books-shop.herokuapp.com"
                 github="https://github.com/dzenis-h/node-book-shop-2.0"
                 name="Node Book Shop"
                 description="A prototype of an online store for selling and buying books 📚🛒"
@@ -494,6 +494,58 @@ const Work = () => {
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
+                  webp={LoanCalculator2_11}
+                  jpg={LoanCalculator2}
+                  title="Loan Calculator that will determine your estimated paymentsfor loan amounts, interest rates and terms."
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://web-loan-calculator.web.app"
+                github="https://github.com/dzenis-h/Loan-Calculator-2.0"
+                name="Loan Calculator 2.0"
+                description="Estimated payments for loan amounts, interest rates and terms 📊"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={CalorieTracker_3}
+                  jpg={CalorieTracker}
+                  title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://web-calorie-tracker.web.app"
+                github="https://github.com/dzenis-h/Calorie_Tracker"
+                name="Calorie Tracker"
+                description="Track your calories and save data into LS 🍏"
+                Z
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={ImageSearch_26}
+                  jpg={ImageSearch}
+                  title="Image Search App"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://coding-challenge-2022.web.app"
+                github="https://github.com/dzenis-h/coding-challenge"
+                name="Image Search App"
+                description="A prototype for search images by using unsplah API. 📷"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
                   webp={ReactiveMovieDB_16}
                   jpg={ReactiveMovieDB}
                   title="reactive_movies"
@@ -542,10 +594,22 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://evolwe-example-site.firebaseapp.com"
+                mainLink="https://evolwe-example-site.web.PP"
                 github="https://github.com/dzenis-h/evolWE"
                 name="evolWe 2.0"
                 description="A prototype of a landing page made for a client ☮"
+              />
+            </div>
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={evolWe1_7} jpg={evolWe1} title="evolWE" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://evolwe-landing-page.web.app"
+                github="https://github.com/dzenis-h/Evolwe-Prototype"
+                name="evolWE v1.0"
+                description="A prototype of a landing page made for a client 👨‍💻"
               />
             </div>
 
@@ -563,19 +627,6 @@ const Work = () => {
                 github="https://github.com/dzenis-h/hotel-xo"
                 name="Hotel XO"
                 description="A prototype website made for a Hotel 🏨"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={evolWe1_7} jpg={evolWe1} title="evolWE" />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://evolwe-landing-page.web.app"
-                github="https://github.com/dzenis-h/Evolwe-Prototype"
-                name="evolWE v1.0"
-                description="A prototype of a landing page made for a client 👨‍💻"
               />
             </div>
 
@@ -612,30 +663,20 @@ const Work = () => {
                 description="A prototype of a portfolio website. 🖥 💻"
               />
             </div>
-          </div>
-          {/* ''''''''''''''''''''''''''''' */}
-          {/* OTHER (silly) APPS */}
-          {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-          {/* WEB SITES */}
-          <br />
-          <b className="diff-projects diff-projects-white">
-            <h4 className="work-heading-segments">Other ("Hobby") Apps</h4>
-          </b>
-          <div className="projects">
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
-                  webp={CalorieTracker_3}
-                  jpg={CalorieTracker}
-                  title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
+                  webp={Portfolio_34}
+                  jpg={Portfolio}
+                  title="This is a precursor of my current personal portfolio site, but regardless, this one is fully functional as it is."
                 />
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://web-calorie-tracker.web.app"
-                github="https://github.com/dzenis-h/Calorie_Tracker"
-                name="Calorie Tracker"
-                description="Track your calories and save data into LS 🍏"
+                mainLink="https://static-portfolio-2.web.app/“  "
+                github="https://github.com/dzenis-h/digitalCV"
+                name="Porfolio Demo"
+                description="This site was build for testing purposes only. 🖥️ 📶"
               />
             </div>
 
@@ -653,57 +694,6 @@ const Work = () => {
                 github="https://github.com/dzenis-h/iBookmark"
                 name="iBookmark 2.0"
                 description="Simple app for bookmarking your favourite websites. ✔"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
-                  webp={DataSearch}
-                  jpg={DataSearch_31}
-                  title="Data Search Prototype"
-                />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://data-search.vercel.app"
-                github="https://github.com/dzenis-h/dataSearch"
-                name="Data Search"
-                description="Search users info by name, surname or company 👀"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
-                  webp={ImageSearch_26}
-                  jpg={ImageSearch}
-                  title="Image Search App"
-                />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://coding-challenge-2022.web.app"
-                github="https://github.com/dzenis-h/coding-challenge"
-                name="Image Search App"
-                description="A prototype for search images by using unsplah API. 📷"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent
-                  webp={LoanCalculator2_11}
-                  jpg={LoanCalculator2}
-                  title="Loan Calculator that will determine your estimated payments for loan amounts, interest rates and terms."
-                />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://web-loan-calculator.web.app"
-                github="https://github.com/dzenis-h/Loan-Calculator-2.0"
-                name="Loan Calculator 2.0"
-                description="Estimated payments for loan amounts, interest rates and terms 📊"
               />
             </div>
           </div>
