@@ -18,6 +18,9 @@ src/documents/Dzenis H.pdf
 /node_modules
 node_modules
 blog/node_modules/
+.tmp.driveupload
+.tmp.drivedownload
+
 /.pnp
 .pnp.js
 build

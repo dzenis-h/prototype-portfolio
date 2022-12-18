@@ -7,7 +7,7 @@ const HighlightedDescription = () => {
   return (
     <Wrapper>
       <div className="item-description">
-        <h4
+        <div
           className="textShaddow"
           style={{ letterSpacing: "4px", textAlign: "center" }}
         >
@@ -32,7 +32,7 @@ const HighlightedDescription = () => {
           <span role="img" aria-label="chart">
             📊 📉 📆
           </span>
-        </h4>
+        </div>
 
         <p>
           It's an EMS software - [Employee management system] that can help
