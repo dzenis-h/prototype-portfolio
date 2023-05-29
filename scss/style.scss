@@ -1,0 +1,55 @@
+.bg-black{
+  background:#000;
+  color:#fff;
+}
+
+#main-header{
+  img{
+    width:100%;
+    height:100%;
+  }
+
+  .port-item{
+    width:30%;
+    .fa{
+      font-size:2em;
+    }
+  }
+
+  .port-item:hover{
+    opacity:0.8;
+    cursor:pointer;
+  }
+}
+
+@media(min-width:1199px){
+  .port-item{
+    padding:3em !important;
+  }
+}
+
+body {
+  background-image: url("../dox/1.png");
+
+}
+
+.main .icons {
+  margin-top: 1rem;
+  position: relative;
+}
+main .icons a {
+  padding: 2rem;
+  transition: all 0.5s ease-out;
+}
+main .icons a:hover {
+  color: #eece1a;
+}
+main .icons i:hover {
+  color: #eece1a;
+}
+main .icons a {
+  padding: 0.85rem;
+}
+main .icons a.cv {
+  margin-left: 0;
+}
