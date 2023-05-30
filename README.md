@@ -3,7 +3,9 @@
 # <img src="https://raw.githubusercontent.com/dzenis-h/prototype-portfolio/master/assets/favicon.ico" width="32" height="32" style="padding: 5px"> Prototype Portfolio
 
 ## Overview 📄
-Prototype Portfolio is a simple and elegant portfolio website template that showcases your projects and skills. It is built with HTML, CSS, and JavaScript, and uses Bootstrap for responsive design and smooth scrolling. You can easily customize it with your own content and style.
+Prototype Portfolio is a simple and elegant portfolio website template that showcases your projects and skills. 
+It is built with HTML, CSS, and JavaScript, and uses Bootstrap for responsive design and smooth scrolling. 
+You can easily customize it with your own content and style.
 
 ![Screenshot of the website](https://drive.google.com/uc?export=view&id=1vniTF7xEw6t4OeE5K-EpstMeviy3hcgb)
 
